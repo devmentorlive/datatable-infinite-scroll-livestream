@@ -1,0 +1,36 @@
+.__dml_table {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.__dml_table tr {
+  border-collapse: collapse;
+}
+
+.__dml_table tr th {
+  text-align: left;
+}
+
+.__dml_table tr th,
+.__dml_table tr td {
+  padding: 0.5rem;
+  border-top: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+}
+
+.__dml_table tr th:last-child,
+.__dml_table tr td:last-child {
+  border-right: 1px solid gainsboro;
+}
+.__dml_table tr:last-child th,
+.__dml_table tr:last-child td {
+  border-bottom: 1px solid gainsboro;
+}
+
+.__dml_table tr td {
+  font-weight: 300;
+}
+
+.__dml_table tr th {
+  font-weight: 700;
+}

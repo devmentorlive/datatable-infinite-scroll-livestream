@@ -22,7 +22,7 @@ export default function DataTable({
   }
 
   return (
-    <table className='__dml_table'>
+    <table className='__dml_table' cellSpacing={0} cellPadding={0}>
       <thead>
         <tr>{renderHead()}</tr>
       </thead>

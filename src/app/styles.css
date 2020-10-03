@@ -1,0 +1,15 @@
+:root {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex-full {
+  width: 100%;
+  flex: 1;
+}
