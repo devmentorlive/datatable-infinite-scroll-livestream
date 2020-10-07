@@ -17,14 +17,21 @@ export default function Tr({ sortedBy, sort, label }) {
         <div className='flex-full'>{label}</div>
         {sort ? (
           <div>
-            <SortUpIcon
-              active={sortedBy && sortedBy[sort.key] === 'ascending'}
-              onClick={() => changeSort('ascending')}
-            />
-            <SortDnIcon
-              active={sortedBy && sortedBy[sort.key] === 'descending'}
-              onClick={() => changeSort('descending')}
-            />
+            {sortedBy && sortedBy[sort.key] === 'ascending' ? (
+              <SortUpIcon
+                active={
+                  sortedBy && sortedBy[sort.key] === 'ascending'
+                }
+                onClick={() => changeSort('descending')}
+              />
+            ) : (
+              <SortDnIcon
+                active={
+                  sortedBy && sortedBy[sort.key] === 'descending'
+                }
+                onClick={() => changeSort('ascending')}
+              />
+            )}
           </div>
         ) : null}
       </div>
